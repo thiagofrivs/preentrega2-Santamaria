@@ -7,21 +7,66 @@ a{
     color: black;
 }
 
-header{
-    background-color: bisque;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+
+.linkLogo{
+    grid-area: logo;
 }
+
+.mailTelefono{
+    grid-area: mailTelefono;
+}
+
+
 
 .logoMys{
     width: 100px;
     margin: 10px;
 }
 
-li{
+.menu ul li{
     display: inline;
     padding: 5px;
     border: 1px black solid;
     border-radius: 10px;
+    
+}
+
+.menu{
+    margin-right: 5px;
+    grid-area: navegador;
+}
+
+.mailTelefono a img {
+    width: 10px;
+}
+
+
+h1{
+    text-transform: uppercase;
+   
+    grid-area: h1;
+}
+
+
+@media (min-width:350px){
+    header{
+        display: grid;
+        background-color: bisque;
+        grid-template-areas: 
+        "logo navegador";
+        align-items: center;
+        justify-content: space-between;
+    }
+    h1{
+        display: none;
+    }
+
+    .mailTelefono{
+        display: none;
+    }
+   
+    .navegador{
+        margin-right: 10px;
+    }
 }
