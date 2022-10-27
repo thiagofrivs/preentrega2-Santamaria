@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 0px;
 }
 
 a{
@@ -29,7 +29,6 @@ a{
     padding: 5px;
     border: 1px black solid;
     border-radius: 10px;
-    
 }
 
 .menu{
@@ -44,29 +43,57 @@ a{
 
 h1{
     text-transform: uppercase;
-   
     grid-area: h1;
+    display: none;
 }
 
 
-@media (min-width:350px){
-    header{
-        display: grid;
-        background-color: bisque;
-        grid-template-areas: 
-        "logo navegador";
-        align-items: center;
-        justify-content: space-between;
-    }
-    h1{
-        display: none;
-    }
 
-    .mailTelefono{
-        display: none;
-    }
+header{
+    display: grid;
+    background-color: bisque;
+    grid-template-areas: 
+    "logo navegador";
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mailTelefono{
+    display: none;
+}
    
-    .navegador{
-        margin-right: 10px;
-    }
+.navegador{
+    margin-right: 10px;
+}
+
+.imgEstudio{
+    width: 150px;
+    margin-top: 0px;
+    justify-content: center;
+    margin-bottom: 0px;
+    grid-area: imagen;
+}
+
+h2{
+    text-align: center;
+}
+.item{
+    border: 2px solid black;
+    width: 130px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    grid-area: item;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.items{
+    border: 2px solid black;
+    margin-top: 20px;
 }
