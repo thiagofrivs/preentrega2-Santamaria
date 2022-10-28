@@ -1,5 +1,5 @@
 /* MOBILE FIRST */
-
+/* INDEX */
 *{
     margin: 0px;
 }
@@ -27,24 +27,18 @@ body{
 }
 
 
-.mailTelefono a img {
-    width: 10px;
-}
+
 
 
 h1{
     text-transform: uppercase;
-    grid-area: h1;
     display: none;
 }
 
 
 
 header{
-    display: grid;
     background-color: #3B2100;
-    grid-template-areas: 
-    "logo navegador";
     align-items: center;
     justify-content: space-between;
 }
@@ -93,11 +87,6 @@ p{
     
 }
 
-/* .items{
-    border: 2px solid black;
-    margin-top: 20px;
-    padding-right: 30px;
-} */
 
 .navbar{
     background-color: #3B2100;
@@ -132,39 +121,16 @@ p{
 }
 
 li:hover{
-    padding:10px;
+    left: 10px;
 }
 
 .list-group{
     margin-top: 30px;
+    width: 200px;
 }
 
 
-/* SERVICIOS */
-.card{
-    background-color: black;
-    margin: 10px;
-    width: 30px;
-}
 
-.papa{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.card-title{
-    color: white;
-}
-
-.card-text{
-    margin-top: 30px;
-}
-
-.servicios{
-    margin-top: 15px;
-    margin-bottom: 50px;
-}
 
 /* FOOTER */
 footer{
@@ -206,9 +172,105 @@ footer{
 }
 
 .whatsapp{
- 
     position: fixed;
     width: 60px;
     bottom: 10px;
     right: 20px;
+}
+
+
+/* SERVICIOS */
+.card{
+    background-color: black;
+    margin: 10px;
+    width: 200px;
+}
+
+.papa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-title{
+    color: white;
+}
+
+.card-text{
+    margin-top: 30px;
+}
+
+.servicios{
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+
+/* DESKTOP */
+
+@media (min-width:1024px){
+    /* INDEX Y HEADER */
+    h1{
+        display: inline;
+        color: white;
+        font-size: 30px;
+        
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .mailTelefono{
+        display: inline;
+        color: white;
+    }
+    .mailTelefono img{
+        width: 15px;
+    }
+    .mailTelefono a{
+        color: white;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .container img{
+        width: 300px;
+    }
+    .nosotros{
+        margin-top: 50px;
+        width: 300px;
+    }
+    .equipo{
+        margin-top: 50px;
+        width: 300px;
+    }
+    .hacemos{
+        margin-top: 50px;
+        width: 300px;
+    }
+    .descripcion{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .whatsapp:hover{
+        width: 80px;
+    }
+
+    /* SERVICIOS */
+    .papa{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .card{
+        width: 250px;
+    }
 }
