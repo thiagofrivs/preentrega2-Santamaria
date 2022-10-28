@@ -166,3 +166,49 @@ li:hover{
     margin-bottom: 50px;
 }
 
+/* FOOTER */
+footer{
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    position:relative;
+    bottom: 0;
+    top: 100px;
+}
+
+.logoMysFooter{
+    width: 130px;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5px;
+}
+.texto{
+    margin-top: 5px;
+}
+.facebook{
+    width: 30px;
+}
+
+.instagram{
+    width :30px;
+}
+
+.imagenesFooter{
+    display: flex;
+    flex-direction: column;
+    margin-right: 85px;
+}
+
+.whatsapp{
+ 
+    position: fixed;
+    width: 60px;
+    bottom: 10px;
+    right: 20px;
+}
