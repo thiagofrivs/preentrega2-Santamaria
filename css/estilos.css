@@ -1,3 +1,5 @@
+/* MOBILE FIRST */
+
 *{
     margin: 0px;
 }
@@ -7,16 +9,9 @@ a{
     color: black;
 }
 
-
-
-.linkLogo{
-    grid-area: logo;
+body{
+    background-image: url("../imagenes/fondo.jpg");
 }
-
-.mailTelefono{
-    grid-area: mailTelefono;
-}
-
 
 
 .logoMys{
@@ -31,10 +26,6 @@ a{
     border-radius: 10px;
 }
 
-.menu{
-    margin-right: 5px;
-    grid-area: navegador;
-}
 
 .mailTelefono a img {
     width: 10px;
@@ -51,7 +42,7 @@ h1{
 
 header{
     display: grid;
-    background-color: bisque;
+    background-color: #3B2100;
     grid-template-areas: 
     "logo navegador";
     align-items: center;
@@ -62,9 +53,7 @@ header{
     display: none;
 }
    
-.navegador{
-    margin-right: 10px;
-}
+
 
 .imgEstudio{
     width: 150px;
@@ -76,6 +65,16 @@ header{
 
 h2{
     text-align: center;
+    color: white;
+}
+h3{
+    text-align: center;
+    color: white;
+}
+
+p{
+    text-align: center;
+    color: white;
 }
 .item{
     border: 2px solid black;
@@ -91,9 +90,51 @@ h2{
     align-items: center;
     flex-direction: column;
     margin-top: 50px;
+    
 }
 
-.items{
+/* .items{
     border: 2px solid black;
     margin-top: 20px;
+    padding-right: 30px;
+} */
+
+.navbar{
+    background-color: #3B2100;
+    
+}
+
+.nav-item{
+    background-color: #131313;
+}
+
+
+
+.nav-link{
+    color:white;
+    margin-left: 10px;
+}
+.navbar-nav{
+    margin-top: 3px;
+}
+.link{
+    color: grey;
+}
+
+.link:hover{
+    color: white;
+    position: relative;
+    left: 10px;
+}
+
+.list-group-item{
+    background-color: #1c1c1c;
+}
+
+li:hover{
+    padding:10px;
+}
+
+.list-group{
+    margin-top: 30px;
 }
